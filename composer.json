@@ -1,1 +1,17 @@
-{}
+{
+    "name": "guilhe1811/buscador_cursos",
+    "description": "Projeto que busca cursos na alura",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Guilhe1811\\BuscadorCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GuiMed18",
+            "email": "guilhe1811@gmail.com"
+        }
+    ],
+    "require": {}
+}
