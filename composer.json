@@ -1,6 +1,6 @@
 {
-    "name": "guilhe1811/buscador_cursos",
-    "description": "Projeto que busca cursos na alura",
+    "name": "guilhe1811/buscador-cursos",
+    "description": "Buscador de cursos no site da alura",
     "type": "library",
     "autoload": {
         "psr-4": {
