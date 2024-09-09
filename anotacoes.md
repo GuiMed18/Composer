@@ -41,3 +41,39 @@ Vai criar o arquivo JSON, com as informações do projeto no composer
     "require": {}
 }
 ``
+## Buscando pacotes
+
+O Composer possui um repositório principal, o packagist //link aqui
+No packagist podemos buscar pacotes públicos, mas também é possível configurar o composer para buscar de qualquer lugar, seja um site corporativo ou até mesmo no github
+
+Para o exemplo, vamos usar o Guzzle (http client - fazer requisições http) e o DomCrawler (Faz a leitura do html)
+
+Para instalar, é possível de duas maneiras
+
+Pegar o comando composer require "pacote do packagist" -> Vai instalar automático
+
+No composer.json, inserir manualmente o pacote e a versão 
+
+`` "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "symphony/dom-crawler": "^7.1.1"
+    }
+``
+
+Após finalizar as inserções, dar um composer install
+
+composer.lock -> Fica as informações de todos os pacotes
+
+Vamos supor que o dom-crawler teve a versão atualizada para ^7.2.1
+
+Alterar no composer.json, depois rodar um composer update, para subir as informações de versão para o projeto
+
+O ^ significa que se houver versões superiores, ele instala ex ^7.3.5
+
+O autoload faz o carregamento de todas as classes instaladas dentro do composer, sem necessidade de puxar uma a uma
+
+``
+require 'vendor/autoload.php';
+ ``
+ 
+
